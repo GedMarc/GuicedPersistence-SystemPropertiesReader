@@ -2,8 +2,7 @@ import com.jwebmp.guicedpersistence.readers.systemproperties.SystemEnvironmentVa
 import com.jwebmp.guicedpersistence.services.PropertiesEntityManagerReader;
 
 module com.jwebmp.guicedpersistence.readers.systemproperties {
-	requires com.jwebmp.guicedpersistence;
-	requires com.google.common;
+	requires transitive com.jwebmp.guicedpersistence;
 	exports com.jwebmp.guicedpersistence.readers.systemproperties;
 
 	provides PropertiesEntityManagerReader with SystemEnvironmentVariablesPropertiesReader;
