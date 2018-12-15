@@ -1,7 +1,7 @@
 package com.jwebmp.guicedpersistence.readers.systemproperties;
 
 import com.google.common.base.Strings;
-import com.jwebmp.guicedpersistence.services.PropertiesEntityManagerReader;
+import com.jwebmp.guicedpersistence.services.IPropertiesEntityManagerReader;
 import com.oracle.jaxb21.PersistenceUnit;
 
 import java.util.HashMap;
@@ -12,7 +12,7 @@ import java.util.Properties;
  * A default connection string builder for H2 Databases
  */
 public class SystemEnvironmentVariablesPropertiesReader
-		implements PropertiesEntityManagerReader
+		implements IPropertiesEntityManagerReader
 {
 
 	@Override

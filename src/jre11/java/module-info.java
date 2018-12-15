@@ -1,5 +1,8 @@
+import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
+import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
+import com.jwebmp.guicedpersistence.readers.systemproperties.SystemEnvironmentModuleExclusions;
 import com.jwebmp.guicedpersistence.readers.systemproperties.SystemEnvironmentVariablesPropertiesReader;
-import com.jwebmp.guicedpersistence.services.PropertiesEntityManagerReader;
+import com.jwebmp.guicedpersistence.services.IPropertiesEntityManagerReader;
 
 module com.jwebmp.guicedpersistence.readers.systemproperties {
 	requires com.jwebmp.guicedpersistence;
@@ -7,8 +10,8 @@ module com.jwebmp.guicedpersistence.readers.systemproperties {
 	requires com.jwebmp.guicedinjection;
 	requires java.validation;
 
-	exports com.jwebmp.guicedpersistence.readers.systemproperties;
-
-	provides PropertiesEntityManagerReader with SystemEnvironmentVariablesPropertiesReader;
+	provides IPropertiesEntityManagerReader with SystemEnvironmentVariablesPropertiesReader;
+	provides IGuiceScanModuleExclusions with SystemEnvironmentModuleExclusions;
+	provides IGuiceScanJarExclusions with SystemEnvironmentModuleExclusions;
 
 }
