@@ -22,11 +22,13 @@
         <dependency>
             <groupId>com.jwebmp.guicedee.persistence</groupId>
             <artifactId>guiced-persistence</artifactId>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.jwebmp.guicedee.persistence</groupId>
             <artifactId>guiced-persistence-jpa</artifactId>
             <scope>test</scope>
+            <type>jar</type>
         </dependency>
 
         <dependency>
@@ -58,11 +60,13 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
+            <type>jar</type>
         </dependency>
 
         <dependency>
             <groupId>javax.persistence</groupId>
             <artifactId>javax.persistence-api</artifactId>
+            <type>jar</type>
         </dependency>
     </dependencies>
 
