@@ -24,12 +24,6 @@
             <artifactId>guiced-persistence</artifactId>
             <type>jar</type>
         </dependency>
-        <dependency>
-            <groupId>com.jwebmp.guicedee.persistence</groupId>
-            <artifactId>guiced-persistence-jpa</artifactId>
-            <scope>test</scope>
-            <type>jar</type>
-        </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
