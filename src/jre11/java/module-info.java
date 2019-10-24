@@ -1,11 +1,17 @@
-module com.jwebmp.guicedpersistence.readers.systemproperties {
-	requires com.jwebmp.guicedpersistence;
+import com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions;
+import com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions;
+import com.guicedee.guicedpersistence.readers.systemproperties.SystemEnvironmentModuleExclusions;
+import com.guicedee.guicedpersistence.readers.systemproperties.SystemEnvironmentVariablesPropertiesReader;
+import com.guicedee.guicedpersistence.services.IPropertiesEntityManagerReader;
+
+module com.guicedee.guicedpersistence.readers.systemproperties {
+	requires com.guicedee.guicedpersistence;
 	requires com.google.common;
-	requires com.jwebmp.guicedinjection;
+	requires com.guicedee.guicedinjection;
 	requires java.validation;
 
-	provides com.jwebmp.guicedpersistence.services.IPropertiesEntityManagerReader with com.jwebmp.guicedpersistence.readers.systemproperties.SystemEnvironmentVariablesPropertiesReader;
-	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.guicedpersistence.readers.systemproperties.SystemEnvironmentModuleExclusions;
-	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.guicedpersistence.readers.systemproperties.SystemEnvironmentModuleExclusions;
+	provides IPropertiesEntityManagerReader with SystemEnvironmentVariablesPropertiesReader;
+	provides IGuiceScanModuleExclusions with SystemEnvironmentModuleExclusions;
+	provides IGuiceScanJarExclusions with SystemEnvironmentModuleExclusions;
 
 }

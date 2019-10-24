@@ -1,7 +1,7 @@
-package com.jwebmp.guicedpersistence.readers.systemproperties;
+package com.guicedee.guicedpersistence.readers.systemproperties;
 
 import com.google.common.base.Strings;
-import com.jwebmp.guicedpersistence.services.IPropertiesEntityManagerReader;
+import com.guicedee.guicedpersistence.services.IPropertiesEntityManagerReader;
 import com.oracle.jaxb21.PersistenceUnit;
 
 import java.util.HashMap;
