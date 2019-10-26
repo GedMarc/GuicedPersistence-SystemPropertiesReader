@@ -1,4 +1,4 @@
-package com.guicedee.jpms.guicedpersistence.jpa;
+package com.guicedee.guicedpersistence.jpa;
 
 import com.guicedee.guicedpersistence.db.DatabaseModule;
 import com.guicedee.guicedpersistence.db.ConnectionBaseInfo;
