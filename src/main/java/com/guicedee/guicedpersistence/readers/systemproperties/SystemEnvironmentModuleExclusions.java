@@ -23,7 +23,7 @@ public class SystemEnvironmentModuleExclusions
 	public @NotNull Set<String> excludeModules()
 	{
 		Set<String> strings = new HashSet<>();
-		strings.add("com.guicedee.jpms.guicedpersistence.readers.systemproperties");
+		strings.add("com.guicedee.guicedpersistence.readers.systemproperties");
 		return strings;
 	}
 }
